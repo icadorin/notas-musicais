@@ -42,6 +42,7 @@ for(var l = 0; l < tamanho; l++) {
     console.log(vazia[l])
 }
 
+//Preenche a array com as notas que formam a escala maior
 for(var i = 0; i < maior.length; i++) {
     if(maior[i] == 'T') {
         notasMaiores[aux] = vazia[aux2]
@@ -57,6 +58,7 @@ for(var i = 0; i < maior.length; i++) {
 aux = 0
 aux2 = 0
 
+//Preenche a array com as notas que formam a escala menor
 for(var y = 0; y < menor.length; y++) {
     if(menor[y] == 'T') {
         notasMenores[aux] = vazia[aux2]
@@ -69,11 +71,13 @@ for(var y = 0; y < menor.length; y++) {
     }
 }
 
+//Printa array de escala maior
 console.log("Notas maiores")
 for(var d = 0; d < tamanho; d++) {
     console.log(notasMaiores[d])
 }
 
+//Printa array de escala menor
 console.log("Notas Menores")
 for(var e = 0; e < tamanho; e++) {
     console.log(notasMenores[e])
