@@ -10,7 +10,7 @@ var resultado = 0;
 var aux = 0;
 var aux2 = 0;
 var tamanho = notas.length;
-var entrada = 'A'; //Valor de entrada do usuário
+var entrada = 'C'; //Valor de entrada do usuário
 //Encontra a posição na array da nota que foi solicitada
 for (var j = 0; j < tamanho; j++) {
     if (notas[j] == entrada) {
@@ -63,13 +63,5 @@ for (var y = 0; y < menor.length; y++) {
         aux2++;
     }
 }
-//Printa array de escala maior
-console.log("Notas maiores");
-for (var d = 0; d < tamanho; d++) {
-    console.log(notasMaiores[d]);
-}
-//Printa array de escala menor
-console.log("Notas Menores");
-for (var e = 0; e < tamanho; e++) {
-    console.log(notasMenores[e]);
-}
+console.log("Notas Maior", notasMaiores);
+console.log("Notas Menor", notasMenores);
